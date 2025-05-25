@@ -44,13 +44,6 @@ chmod +x ns_tgen_routed.sh
 sudo ./ns_tgen_routed.sh
 sudo ./ns_tgen_routed.sh --delete
 ```
----
-## 📂 File Structure
-ns-tgen/
-├── option1_direct.sh       # Option 1: Direct-connected setup
-├── option2_routed.sh       # Option 2: Routed traffic (1-hop away) setup
-├── README.md               # Project documentation
-└── LICENSE                 # Project license
 
 ---
 ## 📄 License
