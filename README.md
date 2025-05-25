@@ -4,7 +4,6 @@
 It is designed for testing firewalls, routers, and network appliances with **two flexible deployment options**.
 
 ---
-
 ## 🌟 Features
 
 ✅ Fully containerless traffic generation using Linux namespaces and veth pairs  
@@ -15,7 +14,6 @@ It is designed for testing firewalls, routers, and network appliances with **two
 ✅ Safe cleanup (`--delete` option) to remove all resources
 
 ---
-
 ## 🔧 Options
 
 ### 🟢 Option 1: **Direct-Connected Traffic Generation**  
@@ -34,23 +32,34 @@ It is designed for testing firewalls, routers, and network appliances with **two
 ![Routed Traffic Generation](https://github.com/user-attachments/assets/11286251-a9fc-4ed8-ad52-766d58d7769b)
 
 ---
-
 ## 🏗️ Usage
 
 ✅ **To create/dete the lab:**
 ```bash
+chmod +x ns_tgen_direct.sh
 sudo ./ns_tgen_direct.sh
 sudo ./ns_tgen_direct.sh --delete
 # OR
+chmod +x ns_tgen_routed.sh
 sudo ./ns_tgen_routed.sh
 sudo ./ns_tgen_routed.sh --delete
 ```
 ---
+## 📂 File Structure
+ns-tgen/
+├── option1_direct.sh       # Option 1: Direct-connected setup
+├── option2_routed.sh       # Option 2: Routed traffic (1-hop away) setup
+├── README.md               # Project documentation
+└── LICENSE                 # Project license
 
+---
 ## 📄 License
 This project is licensed under the MIT License. See the LICENSE file for details.
 
 ---
-
 ## 🤝 Contributing
 Contributions are welcome! Please open issues or submit pull requests for enhancements or bug fixes.
+
+---
+## 📬 Contact
+For questions or support, please open an issue on the GitHub repository.
