@@ -48,6 +48,9 @@ sudo ./ns_tgen_routed.sh --delete
 ---
 
 ## 📄 License
-
 This project is licensed under the MIT License. See the LICENSE file for details.
 
+---
+
+## 🤝 Contributing
+Contributions are welcome! Please open issues or submit pull requests for enhancements or bug fixes.
