@@ -23,6 +23,26 @@ It is designed for testing firewalls, routers, and network appliances with **two
 - Simple Layer 2 (bridged) testing.
 ![Direct-Connected Traffic Generation](https://github.com/user-attachments/assets/6732ca9d-1c3f-49b7-97b9-bc537ecacc11)
 
+## ⚠️ Note for Hypervisor Users (Option 1: Direct-Connected Traffic Generation)
+
+When deploying **Option 1** in virtualized environments, ensure the hypervisor allows the guest VM to assign and transmit custom MAC addresses. This is crucial because the Linux namespaces may use MAC addresses different from those assigned by the hypervisor. To facilitate this:
+
+### **VMware ESXi**
+
+- Navigate to the settings of the relevant **port group**.
+- Under the **Security** tab, set the following policies to **Accept**:
+  - **Promiscuous Mode**
+  - **MAC Address Changes**
+  - **Forged Transmits**
+
+### **KVM (Kernel-based Virtual Machine)**
+
+- Configure the virtual network interface to allow MAC address changes.
+- Ensure that the bridge or virtual network is set to accept traffic from interfaces with custom MAC addresses.
+- This may involve setting the interface to **promiscuous mode** or adjusting bridge settings to permit MAC spoofing.
+
+Failing to configure these settings may result in dropped packets or connectivity issues within the simulated network namespaces.
+
 ### 🟠 Option 2: **Routed Traffic Generation (One-hop away)**  
 **Script file:** `ns_tgen_routed.sh`  
 - Namespaces are in private subnets (`192.168.1.x` and `192.168.2.x`).  
