@@ -1,6 +1,6 @@
-# ns-tgen: Linux Namespace Traffic Generator
+# Linux Namespace Traffic Generator
 
-`ns-tgen` is a simple yet powerful traffic generator based on Linux network namespaces.  
+`ns_tgen` is a simple yet powerful traffic generator based on Linux network namespaces.  
 It is designed for testing firewalls, routers, and network appliances with **two flexible deployment options**.
 
 ---
