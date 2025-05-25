@@ -23,6 +23,7 @@ It is designed for testing firewalls, routers, and network appliances with **two
 - Each namespace (client and server) is directly connected to the DUT (firewall).  
 - DUT acts as the default gateway for all namespaces.  
 - Simple Layer 2 (bridged) testing.
+![Direct-Connected Traffic Generation](https://github.com/user-attachments/assets/6732ca9d-1c3f-49b7-97b9-bc537ecacc11)
 
 ### 🟠 Option 2: **Routed Traffic Generation (One-hop away)**  
 **Script file:** `option2_routed.sh`  
@@ -30,6 +31,7 @@ It is designed for testing firewalls, routers, and network appliances with **two
 - Only the Linux VM’s physical interfaces (`eth1`, `eth2`) face the DUT directly.  
 - Traffic from namespaces is routed via the Linux VM to the DUT.  
 - Closer to real-world deployment scenarios.
+![Routed Traffic Generation](https://github.com/user-attachments/assets/11286251-a9fc-4ed8-ad52-766d58d7769b)
 
 ---
 
@@ -37,6 +39,6 @@ It is designed for testing firewalls, routers, and network appliances with **two
 
 ✅ **To create the lab:**
 ```bash
-sudo ./option1_direct.sh
+sudo ./ns_tgen_direct.sh
 # OR
-sudo ./option2_routed.sh
+sudo ./ns_tgen_routed.sh
