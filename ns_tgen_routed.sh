@@ -110,9 +110,9 @@ client_ns_create() {
     ip netns exec $NS bash -c "
       while true; do
         for srv in \$(seq $SERVER_START_IP $((SERVER_START_IP + SERVER_COUNT - 1))); do
-          echo \"[client_ns$i] Pinging 192.168.2.\$srv...\"
+          echo \"[client_ns$i] Pinging \$SERVER_BASE_IP.\$srv...\"
           ping -c 1 $SERVER_BASE_IP.\$srv > /dev/null
-          echo \"[client_ns$i] Curling 192.168.2.\$srv...\"
+          echo \"[client_ns$i] Curling \$SERVER_BASE_IP.\$srv...\"
           curl -s http://$SERVER_BASE_IP.\$srv/index.html > /dev/null
         done
         sleep 2
