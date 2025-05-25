@@ -44,5 +44,10 @@ sudo ./ns_tgen_direct.sh --delete
 # OR
 sudo ./ns_tgen_routed.sh
 sudo ./ns_tgen_routed.sh --delete
+```
+---
 
+## 📄 License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
 
