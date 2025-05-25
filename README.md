@@ -42,3 +42,9 @@ It is designed for testing firewalls, routers, and network appliances with **two
 sudo ./ns_tgen_direct.sh
 # OR
 sudo ./ns_tgen_routed.sh
+
+✅ **To delete everything:**
+```bash
+sudo ./ns_tgen_direct.sh --delete
+# OR
+sudo ./ns_tgen_routed.sh --delete
