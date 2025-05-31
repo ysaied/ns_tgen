@@ -30,6 +30,8 @@ A lightweight shell script to create network namespaces, simulate client-server 
 ## Bridging Mode (L2)
 ![2](https://github.com/user-attachments/assets/140c8c2c-b251-436c-9d69-3e9e38aaef67)
 
+### Important Note
+- The hypervisor must allow MAC
 
 ## Usage
 
