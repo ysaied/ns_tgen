@@ -23,6 +23,14 @@ A lightweight shell script to create network namespaces, simulate client-server 
 - Root privileges (or sudo) to create namespaces and install packages.
 - `bash`, `ip`, `apt-get`, `lighttpd`, `dnsmasq`, `rsyslogd`.
 
+## Routing Mode (L3)
+![1](https://github.com/user-attachments/assets/1ab1b4dd-2661-44d5-8c18-3837be1cf340)
+
+
+## Bridging Mode (L2)
+![2](https://github.com/user-attachments/assets/140c8c2c-b251-436c-9d69-3e9e38aaef67)
+
+
 ## Usage
 
 ```bash
