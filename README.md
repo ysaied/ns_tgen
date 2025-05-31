@@ -31,7 +31,8 @@ A lightweight shell script to create network namespaces, simulate client-server 
 ![2](https://github.com/user-attachments/assets/140c8c2c-b251-436c-9d69-3e9e38aaef67)
 
 ### Important Note
-- The hypervisor must allow MAC
+- The hypervisor must allow VM-generated MAC
+- VMware ESXi (MAC Address Changes, Forged Transmits)
 
 ## Usage
 
