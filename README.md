@@ -1,4 +1,4 @@
-# Network Namespace Traffic Generator (ns_tgen)
+# Network Namespace Traffic Generator
 
 A lightweight shell script to create network namespaces, simulate client-server traffic, and run simple services (HTTP, DNS, Syslog) within namespaces. Useful for testing network setups or traffic flows entirely on a single Linux host.
 
